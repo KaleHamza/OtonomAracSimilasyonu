@@ -2364,9 +2364,10 @@ GameObject:
   - component: {fileID: 872477712}
   - component: {fileID: 872477714}
   - component: {fileID: 872477713}
+  - component: {fileID: 872477715}
   m_Layer: 0
   m_Name: Cizgi (1)
-  m_TagString: Untagged
+  m_TagString: SiyahCizgi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2436,6 +2437,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872477711}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &872477715
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872477711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &896549563
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,9 +2558,10 @@ GameObject:
   - component: {fileID: 896955293}
   - component: {fileID: 896955295}
   - component: {fileID: 896955294}
+  - component: {fileID: 896955296}
   m_Layer: 0
   m_Name: Cizgi (3)
-  m_TagString: Untagged
+  m_TagString: SiyahCizgi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2616,6 +2631,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896955292}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &896955296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896955292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &912801807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3512,6 +3540,9 @@ GameObject:
   - component: {fileID: 1247837391}
   - component: {fileID: 1247837390}
   - component: {fileID: 1247837389}
+  - component: {fileID: 1247837392}
+  - component: {fileID: 1247837393}
+  - component: {fileID: 1247837394}
   m_Layer: 0
   m_Name: Arac
   m_TagString: Untagged
@@ -3577,7 +3608,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247837387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.383, y: 1.141, z: 4.187}
+  m_LocalPosition: {x: -1.387, y: 0.321, z: 4.187}
   m_LocalScale: {x: 1, y: 0.32169262, z: 0.63603}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3600,6 +3631,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1247837392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247837387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01ce87e4612841546a9496cb665e9e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPoint: {fileID: 378263841}
+  speed: 1
+  turnSpeed: 0
+--- !u!54 &1247837393
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247837387}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 36
+  m_CollisionDetection: 0
+--- !u!65 &1247837394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247837387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.97229713, y: 1.1542238, z: 1}
+  m_Center: {x: -0.013851374, y: -0.07711243, z: 0}
 --- !u!1 &1275857989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3611,9 +3686,10 @@ GameObject:
   - component: {fileID: 1275857990}
   - component: {fileID: 1275857992}
   - component: {fileID: 1275857991}
+  - component: {fileID: 1275857993}
   m_Layer: 0
   m_Name: Cizgi
-  m_TagString: Untagged
+  m_TagString: SiyahCizgi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3683,6 +3759,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275857989}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1275857993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275857989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1277594176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3694,9 +3783,10 @@ GameObject:
   - component: {fileID: 1277594177}
   - component: {fileID: 1277594179}
   - component: {fileID: 1277594178}
+  - component: {fileID: 1277594180}
   m_Layer: 0
   m_Name: Cizgi (4)
-  m_TagString: Untagged
+  m_TagString: SiyahCizgi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3766,6 +3856,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277594176}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1277594180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277594176}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1300452257
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,9 +3880,10 @@ GameObject:
   - component: {fileID: 1300452258}
   - component: {fileID: 1300452260}
   - component: {fileID: 1300452259}
+  - component: {fileID: 1300452261}
   m_Layer: 0
   m_Name: Cizgi (6)
-  m_TagString: Untagged
+  m_TagString: SiyahCizgi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3849,6 +3953,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300452257}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1300452261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300452257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1317805453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3983,7 +4100,7 @@ GameObject:
   - component: {fileID: 1363291203}
   - component: {fileID: 1363291202}
   - component: {fileID: 1363291201}
-  - component: {fileID: 1363291200}
+  - component: {fileID: 1363291204}
   m_Layer: 0
   m_Name: Zemin
   m_TagString: Untagged
@@ -3991,20 +4108,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1363291200
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363291199}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1363291201
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4070,6 +4173,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1363291204
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363291199}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1403042081
 GameObject:
   m_ObjectHideFlags: 0
@@ -4081,9 +4198,10 @@ GameObject:
   - component: {fileID: 1403042082}
   - component: {fileID: 1403042084}
   - component: {fileID: 1403042083}
+  - component: {fileID: 1403042085}
   m_Layer: 0
   m_Name: Cizgi (5)
-  m_TagString: Untagged
+  m_TagString: SiyahCizgi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4153,6 +4271,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403042081}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1403042085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403042081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1418132633
 GameObject:
   m_ObjectHideFlags: 0
@@ -4330,9 +4461,10 @@ GameObject:
   - component: {fileID: 1470484866}
   - component: {fileID: 1470484868}
   - component: {fileID: 1470484867}
+  - component: {fileID: 1470484869}
   m_Layer: 0
   m_Name: Cizgi (7)
-  m_TagString: Untagged
+  m_TagString: SiyahCizgi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4402,6 +4534,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470484865}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1470484869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470484865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1506113402
 GameObject:
   m_ObjectHideFlags: 0
@@ -4625,9 +4770,10 @@ GameObject:
   - component: {fileID: 1607997478}
   - component: {fileID: 1607997480}
   - component: {fileID: 1607997479}
+  - component: {fileID: 1607997481}
   m_Layer: 0
   m_Name: Cizgi (8)
-  m_TagString: Untagged
+  m_TagString: SiyahCizgi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4697,6 +4843,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607997477}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1607997481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607997477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1651997533
 GameObject:
   m_ObjectHideFlags: 0
@@ -4742,9 +4901,10 @@ GameObject:
   - component: {fileID: 1656697033}
   - component: {fileID: 1656697035}
   - component: {fileID: 1656697034}
+  - component: {fileID: 1656697036}
   m_Layer: 0
   m_Name: Cizgi (2)
-  m_TagString: Untagged
+  m_TagString: SiyahCizgi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4814,6 +4974,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656697032}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1656697036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656697032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1657870996
 GameObject:
   m_ObjectHideFlags: 0

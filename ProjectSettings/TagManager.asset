@@ -8,11 +8,12 @@ TagManager:
   - Sag
   - BirakBarkod
   - Sol
+  - SiyahCizgi
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - SiyahCizgi
   - Water
   - UI
   - 
